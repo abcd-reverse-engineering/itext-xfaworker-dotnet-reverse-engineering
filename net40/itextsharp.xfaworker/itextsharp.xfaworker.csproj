@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Manager\AppData\Local\Temp\Jumoxal\65d368a2f0\lib\net40\itextsharp.xfaworker.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5278869D-8B00-4B73-A01A-C0CFEF26BD10}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>itextsharp.xfaworker</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>5.5.13.2</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>iTextSharp.tool.xml</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Jint">
+      <HintPath>lib\Jint.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="css\XfaCssInheritanceRules.cs" />
+    <Compile Include="css\apply\XFAChunkCssApplier.cs" />
+    <Compile Include="css\apply\XFACssAppliersImpl.cs" />
+    <Compile Include="css\apply\XFAParagraphCssApplier.cs" />
+    <Compile Include="pdfelement\XFAParagraph.cs" />
+    <Compile Include="xtra\xfa\XFAWorker.cs" />
+    <Compile Include="xtra\xfa\ExceptionMessageConstant.cs" />
+    <Compile Include="xtra\xfa\XFAFlattenerUnexpectedUsageException.cs" />
+    <Compile Include="xtra\xfa\SettableLatch.cs" />
+    <Compile Include="xtra\xfa\XFAConstants.cs" />
+    <Compile Include="xtra\xfa\XFAFlattener.cs" />
+    <Compile Include="xtra\xfa\XFAFormStateApplier.cs" />
+    <Compile Include="xtra\xfa\XFALocale.cs" />
+    <Compile Include="xtra\xfa\XFAVersion.cs" />
+    <Compile Include="xtra\xfa\bind\DataBindReference.cs" />
+    <Compile Include="xtra\xfa\bind\DataTreeResolver.cs" />
+    <Compile Include="xtra\xfa\bind\DataTreeResolverContext.cs" />
+    <Compile Include="xtra\xfa\bind\EmbeddedElement.cs" />
+    <Compile Include="xtra\xfa\checksum\ChecksumXFAWorker.cs" />
+    <Compile Include="xtra\xfa\checksum\XFAChecksumCalculator.cs" />
+    <Compile Include="xtra\xfa\checksum\XFAChecksumXMLParser.cs" />
+    <Compile Include="xtra\xfa\checksum\XFANormalizer.cs" />
+    <Compile Include="xtra\xfa\config\XFAConfig.cs" />
+    <Compile Include="xtra\xfa\config\AppConfig.cs" />
+    <Compile Include="xtra\xfa\config\HostConfig.cs" />
+    <Compile Include="xtra\xfa\element\AbstractDrawer.cs" />
+    <Compile Include="xtra\xfa\element\ArcDrawer.cs" />
+    <Compile Include="xtra\xfa\element\Element.cs" />
+    <Compile Include="xtra\xfa\element\ContentElement.cs" />
+    <Compile Include="xtra\xfa\element\ArcElement.cs" />
+    <Compile Include="xtra\xfa\element\BarcodeDrawer.cs" />
+    <Compile Include="xtra\xfa\element\UiElement.cs" />
+    <Compile Include="xtra\xfa\element\BarcodeElement.cs" />
+    <Compile Include="xtra\xfa\element\BorderDrawer.cs" />
+    <Compile Include="xtra\xfa\element\BreakConditions.cs" />
+    <Compile Include="xtra\xfa\element\ButtonElement.cs" />
+    <Compile Include="xtra\xfa\element\CaptionElement.cs" />
+    <Compile Include="xtra\xfa\element\CheckButtonElement.cs" />
+    <Compile Include="xtra\xfa\element\ChoiceListElement.cs" />
+    <Compile Include="xtra\xfa\element\CombElement.cs" />
+    <Compile Include="xtra\xfa\element\IContentTextElement.cs" />
+    <Compile Include="xtra\xfa\element\ImageEditElement.cs" />
+    <Compile Include="xtra\xfa\element\ImageElement.cs" />
+    <Compile Include="xtra\xfa\element\KeepConditions.cs" />
+    <Compile Include="xtra\xfa\element\LineDrawer.cs" />
+    <Compile Include="xtra\xfa\element\LineElement.cs" />
+    <Compile Include="xtra\xfa\element\MarkDrawer.cs" />
+    <Compile Include="xtra\xfa\element\OverflowConditions.cs" />
+    <Compile Include="xtra\xfa\element\PositionResult.cs" />
+    <Compile Include="xtra\xfa\element\RectangleElement.cs" />
+    <Compile Include="xtra\xfa\element\RoundBorderDrawer.cs" />
+    <Compile Include="xtra\xfa\element\SignatureElement.cs" />
+    <Compile Include="xtra\xfa\element\TextDrawer.cs" />
+    <Compile Include="xtra\xfa\element\TextEditElement.cs" />
+    <Compile Include="xtra\xfa\element\TextElement.cs" />
+    <Compile Include="xtra\xfa\element\TrailerLeaderElement.cs" />
+    <Compile Include="xtra\xfa\element\XFAFontSelector.cs" />
+    <Compile Include="xtra\xfa\element\XFAHyphenation.cs" />
+    <Compile Include="xtra\xfa\element\ContentArea.cs" />
+    <Compile Include="xtra\xfa\element\PageArea.cs" />
+    <Compile Include="xtra\xfa\element\PageSet.cs" />
+    <Compile Include="xtra\xfa\js\IJsObject`1.cs" />
+    <Compile Include="xtra\xfa\js\JintJsObject.cs" />
+    <Compile Include="xtra\xfa\js\JsTree.cs" />
+    <Compile Include="xtra\xfa\js\JsNode.cs" />
+    <Compile Include="xtra\xfa\js\JintExecutionError.cs" />
+    <Compile Include="xtra\xfa\js\JintJsNodeList.cs" />
+    <Compile Include="xtra\xfa\js\JsAcrobatUtil.cs" />
+    <Compile Include="xtra\xfa\js\JsApp.cs" />
+    <Compile Include="xtra\xfa\js\JsConsole.cs" />
+    <Compile Include="xtra\xfa\js\JsContainer.cs" />
+    <Compile Include="xtra\xfa\js\JsContent.cs" />
+    <Compile Include="xtra\xfa\js\JsDataGroup.cs" />
+    <Compile Include="xtra\xfa\js\JsModel.cs" />
+    <Compile Include="xtra\xfa\js\JsDataModel.cs" />
+    <Compile Include="xtra\xfa\js\JsDataObject.cs" />
+    <Compile Include="xtra\xfa\js\JsDataValue.cs" />
+    <Compile Include="xtra\xfa\js\JsDoc.cs" />
+    <Compile Include="xtra\xfa\js\JsEvent.cs" />
+    <Compile Include="xtra\xfa\js\JsForm.cs" />
+    <Compile Include="xtra\xfa\js\JsHost.cs" />
+    <Compile Include="xtra\xfa\js\JsInstanceManager.cs" />
+    <Compile Include="xtra\xfa\js\JsManifest.cs" />
+    <Compile Include="xtra\xfa\js\JsOccur.cs" />
+    <Compile Include="xtra\xfa\js\JsScript.cs" />
+    <Compile Include="xtra\xfa\js\JsTemplate.cs" />
+    <Compile Include="xtra\xfa\js\JsValueNode.cs" />
+    <Compile Include="xtra\xfa\js\JsXfa.cs" />
+    <Compile Include="xtra\xfa\js\JsLayout.cs" />
+    <Compile Include="xtra\xfa\js\JintJsXfaElementConstructor.cs" />
+    <Compile Include="xtra\xfa\js\JintJsXfaExecutionVisitor.cs" />
+    <Compile Include="xtra\xfa\js\JintJsXfaGlobal.cs" />
+    <Compile Include="xtra\xfa\js\ResourceUtil.cs" />
+    <Compile Include="xtra\xfa\js\ScriptString.cs" />
+    <Compile Include="xtra\xfa\tags\IFormNode.cs" />
+    <Compile Include="xtra\xfa\tags\DataTag.cs" />
+    <Compile Include="xtra\xfa\tags\RichTextBreak.cs" />
+    <Compile Include="xtra\xfa\tags\RichTextParagraph.cs" />
+    <Compile Include="xtra\xfa\tags\RichTextSpan.cs" />
+    <Compile Include="xtra\xfa\tags\XFATemplateTag.cs" />
+    <Compile Include="xtra\xfa\font\XFAFontProvider.cs" />
+    <Compile Include="xtra\xfa\font\XFAFontSettings.cs" />
+    <Compile Include="xtra\xfa\font\NoAcroFormFound.cs" />
+    <Compile Include="xtra\xfa\font\StyleWrapper.cs" />
+    <Compile Include="xtra\xfa\font\XFAFont.cs" />
+    <Compile Include="xtra\xfa\format\FormattingElement.cs" />
+    <Compile Include="xtra\xfa\format\CornerFormattingElement.cs" />
+    <Compile Include="xtra\xfa\formcalc\IFormCalcVisitor`1.cs" />
+    <Compile Include="xtra\xfa\formcalc\FormCalcBaseVisitor`1.cs" />
+    <Compile Include="xtra\xfa\formcalc\FormCalc2JavaScriptConverter.cs" />
+    <Compile Include="xtra\xfa\formcalc\IFormCalcListener.cs" />
+    <Compile Include="xtra\xfa\formcalc\FormCalcBaseListener.cs" />
+    <Compile Include="xtra\xfa\formcalc\FormCalcLexer.cs" />
+    <Compile Include="xtra\xfa\formcalc\FormCalcParser.cs" />
+    <Compile Include="xtra\xfa\formcalc\XFAFormCalcInputStream.cs" />
+    <Compile Include="xtra\xfa\pipe\ConfigPipeline.cs" />
+    <Compile Include="xtra\xfa\pipe\TemplateBuilderPipeline.cs" />
+    <Compile Include="xtra\xfa\pipe\FormBuilderPipeline.cs" />
+    <Compile Include="xtra\xfa\pipe\PdfPipeline.cs" />
+    <Compile Include="xtra\xfa\pipe\XdpPipeline.cs" />
+    <Compile Include="xtra\xfa\pipe\XFAHtmlPipeline.cs" />
+    <Compile Include="xtra\xfa\pipe\DataContext.cs" />
+    <Compile Include="xtra\xfa\pipe\DataPipeline.cs" />
+    <Compile Include="xtra\xfa\pipe\FormBuilder.cs" />
+    <Compile Include="xtra\xfa\pipe\LocalContextElementHandlerPipeline.cs" />
+    <Compile Include="xtra\xfa\pipe\LocalePipeline.cs" />
+    <Compile Include="xtra\xfa\pipe\XFAFlattenerData.cs" />
+    <Compile Include="xtra\xfa\positioner\Positioner.cs" />
+    <Compile Include="xtra\xfa\positioner\SubFormPositioner.cs" />
+    <Compile Include="xtra\xfa\positioner\AreaPositioner.cs" />
+    <Compile Include="xtra\xfa\positioner\ExclGroupValueResolver.cs" />
+    <Compile Include="xtra\xfa\positioner\ContentPositioner.cs" />
+    <Compile Include="xtra\xfa\positioner\DrawPositioner.cs" />
+    <Compile Include="xtra\xfa\positioner\ExclGroupPositioner.cs" />
+    <Compile Include="xtra\xfa\positioner\FieldPositioner.cs" />
+    <Compile Include="xtra\xfa\positioner\LayoutManager.cs" />
+    <Compile Include="xtra\xfa\positioner\SubformSetPositioner.cs" />
+    <Compile Include="xtra\xfa\positioner\TableLayoutManager.cs" />
+    <Compile Include="xtra\xfa\resolver\SomExpressionNode.cs" />
+    <Compile Include="xtra\xfa\resolver\ClassNameReferenceNode.cs" />
+    <Compile Include="xtra\xfa\resolver\ConfigResolver.cs" />
+    <Compile Include="xtra\xfa\resolver\FormatResolver.cs" />
+    <Compile Include="xtra\xfa\resolver\HrefReference.cs" />
+    <Compile Include="xtra\xfa\resolver\IHrefResolver.cs" />
+    <Compile Include="xtra\xfa\resolver\HrefResolver.cs" />
+    <Compile Include="xtra\xfa\resolver\IdReferenceNode.cs" />
+    <Compile Include="xtra\xfa\resolver\NameReferenceNode.cs" />
+    <Compile Include="xtra\xfa\resolver\ShortcutReferenceNode.cs" />
+    <Compile Include="xtra\xfa\resolver\SomExpression.cs" />
+    <Compile Include="xtra\xfa\resolver\FlattenerContext.cs" />
+    <Compile Include="xtra\xfa\resolver\LocaleResolver.cs" />
+    <Compile Include="xtra\xfa\util\PdfCanvasForInvisibleElements.cs" />
+    <Compile Include="xtra\xfa\util\XFAPageAnnotationsCopier.cs" />
+    <Compile Include="xtra\xfa\util\XFARectangle.cs" />
+    <Compile Include="xtra\xfa\util\XFAUtil.cs" />
+    <Compile Include="html\RichTextTags.cs" />
+    <Compile Include="itextsharp\xfaworker\iTextSharp\tool\xml\xtra\xfa\tags\XFATagProcessor.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xtra\xfa\font\LiberationMono.ttf" />
+    <EmbeddedResource Include="xtra\xfa\font\LiberationMonoBold.ttf" />
+    <EmbeddedResource Include="xtra\xfa\font\LiberationMonoBoldItalic.ttf" />
+    <EmbeddedResource Include="xtra\xfa\font\LiberationMonoItalic.ttf" />
+    <EmbeddedResource Include="xtra\xfa\font\LiberationSans.ttf" />
+    <EmbeddedResource Include="xtra\xfa\font\LiberationSansBold.ttf" />
+    <EmbeddedResource Include="xtra\xfa\font\LiberationSansBoldItalic.ttf" />
+    <EmbeddedResource Include="xtra\xfa\font\LiberationSansItalic.ttf" />
+    <EmbeddedResource Include="xtra\xfa\font\LiberationSerif.ttf" />
+    <EmbeddedResource Include="xtra\xfa\font\LiberationSerifBold.ttf" />
+    <EmbeddedResource Include="xtra\xfa\font\LiberationSerifBoldItalic.ttf" />
+    <EmbeddedResource Include="xtra\xfa\font\LiberationSerifItalic.ttf" />
+    <EmbeddedResource Include="xtra\xfa\js\prototype.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
